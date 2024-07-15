@@ -50,7 +50,7 @@ function Chatsss({ chat, chatUser, setShowHide, showHide }) {
             <div
                 className='h-[81%]   overflow-y-auto  relative border-yellow-900'>
                 <img src={BackgroundIMG} className='w-full h-[81%] -z-10 fixed' alt="" />
-                {chat?.data.map((item,index)=><li ref={chatRef} className='list-none w-96 ml-2 dark:text-black dark:bg-darkSelect2 bg-white my-4 p-2 rounded-lg' key={index}>
+                {chat?.data.map((item,index)=><li ref={chatRef} className='list-none w-80 ml-2 dark:text-black dark:bg-darkSelect2 bg-white my-4 p-2 rounded-lg' key={index}>
                       <p>{item.message}</p>
                       <div className='text-[14px] mt-2 text-end'>{format(item.created_at)}</div>
                       {/* <span>{item.created_at}</span> */}
